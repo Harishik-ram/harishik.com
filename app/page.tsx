@@ -172,7 +172,7 @@ export default function Home() {
         {/* Experience */}
         <section className="py-20">
           <SectionHeading id="work" num="01.">Experience</SectionHeading>
-          <div className={`mt-8 p-7 ${card}`}>
+          <div className="mt-8">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white">
                 Software Engineer ·{" "}
