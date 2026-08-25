@@ -89,7 +89,7 @@ export default function Home() {
       {/* Nav */}
       <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90">
         <nav className="mx-auto flex h-16 max-w-4xl items-center justify-between px-6">
-          <a href="#top" className="font-mono text-sm font-bold tracking-tight text-slate-900 dark:text-white">
+          <a href="/" className="font-mono text-sm font-bold tracking-tight text-slate-900 dark:text-white">
             harishik<span className="text-emerald-600 dark:text-emerald-400">.com</span>
           </a>
           <div className="flex items-center gap-5">
