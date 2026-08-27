@@ -449,15 +449,15 @@ export default function Home() {
               <p>
                 I&apos;m a software engineer from Andhra Pradesh, now in
                 Bengaluru (B.Tech CSE, Andhra University, 2025). What I enjoy
-                most is taking a product all the way: from an empty repo to a
+                most is taking a product all the way. From an empty repo to a
                 data model, to APIs, to a UI people actually use, to a real
-                deployment with real users — and then owning what breaks.
+                deployment with real users. Then owning what breaks.
               </p>
               <p>
                 That&apos;s how dunnflow happened. I wanted to understand every
-                layer of a real business — payments, webhooks, billing, email
-                deliverability, SEO, even the legal pages — so I built one.
-                It&apos;s live, it processes real Stripe events, and it taught me
+                layer of a real business: payments, webhooks, billing, email
+                deliverability, SEO, even the legal pages. So I built one. It
+                is live, it processes real Stripe events, and it taught me
                 more than any course could.
               </p>
               <p>
