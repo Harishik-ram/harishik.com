@@ -130,7 +130,7 @@ export default function Home() {
             I build and ship complete products.
           </p>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-400">
-            Software engineer working across the full stack — React, Next.js,
+            Software engineer working across the full stack: React, Next.js,
             Node.js, PostgreSQL, AWS. By day I build a production healthcare
             platform at{" "}
             <a href="https://anvera.health/" target="_blank" rel="noreferrer" className="font-medium text-slate-900 underline decoration-emerald-600 underline-offset-4 dark:text-white dark:decoration-emerald-400">
@@ -140,8 +140,8 @@ export default function Home() {
             <a href="https://dunnflow.com" target="_blank" rel="noreferrer" className="font-medium text-slate-900 underline decoration-emerald-600 underline-offset-4 dark:text-white dark:decoration-emerald-400">
               dunnflow
             </a>
-            , a live payment-recovery SaaS for Stripe businesses — designed,
-            built, and launched end-to-end.
+            , a live payment-recovery SaaS for Stripe businesses. I designed,
+            built, and launched it end-to-end.
           </p>
           <p className="mt-6 flex items-center gap-2 font-mono text-sm text-slate-500 dark:text-slate-400">
             <span className="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
