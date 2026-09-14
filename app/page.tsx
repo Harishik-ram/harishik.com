@@ -186,7 +186,7 @@ export default function Home() {
             </div>
             <ul className="mt-5 space-y-3 leading-relaxed marker:text-emerald-600 dark:marker:text-emerald-400 list-disc pl-5 text-slate-600 dark:text-slate-400">
               <li>
-                Built the patient portal end-to-end — 8+ modules including a
+                Built the patient portal end-to-end: 8+ modules including a
                 symptom checker, triage, ICD-11 diagnosis explainers, care
                 plans, medical records, appointments, and immunisation tracking.
               </li>
@@ -196,7 +196,7 @@ export default function Home() {
                 consent-based caretaker module.
               </li>
               <li>
-                Drove architecture and infrastructure — schema design,
+                Drove architecture and infrastructure: schema design,
                 migrations, authentication, email delivery, and AWS deployment
                 (EC2 + RDS, Cloudflare, Redis, SES).
               </li>
@@ -230,7 +230,7 @@ export default function Home() {
               </p>
             </div>
             <p className="mt-2 text-lg font-medium text-slate-600 dark:text-slate-400">
-              Payment recovery for SaaS businesses on Stripe — built, launched,
+              Payment recovery for SaaS businesses on Stripe. Built, launched,
               and operated solo.
             </p>
 
@@ -238,16 +238,16 @@ export default function Home() {
               <a href="https://dunnflow.com" target="_blank" rel="noreferrer" className={`sm:col-span-2 overflow-hidden ${card}`}>
                 <Image
                   src={overview}
-                  alt="dunnflow dashboard — money at risk, recovered, and recovery rate"
+                  alt="dunnflow dashboard showing money at risk, recovered, and recovery rate"
                   className="w-full"
                   placeholder="blur"
                 />
               </a>
               <div className={`overflow-hidden ${card}`}>
-                <Image src={analytics} alt="dunnflow analytics — recovery charts" placeholder="blur" />
+                <Image src={analytics} alt="dunnflow analytics with recovery charts" placeholder="blur" />
               </div>
               <div className={`overflow-hidden ${card}`}>
-                <Image src={timeline} alt="dunnflow payment timeline — event log of a recovery" placeholder="blur" />
+                <Image src={timeline} alt="dunnflow payment timeline, the event log of a recovery" placeholder="blur" />
               </div>
             </div>
 
@@ -261,7 +261,7 @@ export default function Home() {
               </p>
               <p>
                 <span className="font-semibold text-slate-900 dark:text-white">What I built:</span>{" "}
-                the entire product — signature-verified Stripe webhook
+                the entire product. Signature-verified Stripe webhook
                 processing, a multi-tenant Supabase/PostgreSQL backend with
                 row-level security, automated recovery-email sequences with
                 open/click tracking, per-account analytics dashboards, a live
@@ -274,7 +274,7 @@ export default function Home() {
                 keys plus unique invoice constraints to make double-charging
                 impossible, and automatically excludes refunded or disputed
                 recoveries from fees. Onboarding is one click via Stripe Connect
-                OAuth — a customer is fully set up in about 3 minutes with no
+                OAuth, so a customer is fully set up in about 3 minutes with no
                 code or API keys.
               </p>
             </div>
@@ -316,7 +316,7 @@ export default function Home() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             <div className={`flex h-full flex-col overflow-hidden sm:col-span-2 ${card}`}>
               <a href="https://onlineringsize.com/" target="_blank" rel="noreferrer" className="border-b border-slate-200 dark:border-slate-800">
-                <Image src={ringsize} alt="Online Ring Size — free ring size calculator with screen calibration" className="w-full" placeholder="blur" />
+                <Image src={ringsize} alt="Online Ring Size, a free ring size calculator with screen calibration" className="w-full" placeholder="blur" />
               </a>
               <div className="flex flex-1 flex-col p-7">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
@@ -329,12 +329,12 @@ export default function Home() {
                 </p>
                 <p className="mt-4 flex-1 leading-relaxed text-slate-600 dark:text-slate-400">
                   A free ring-size calculator that calibrates your screen
-                  against real objects — a bank card, a coin, a folded sheet of
-                  paper — then reads your size in 11 national standards with an
+                  against real objects (a bank card, a coin, a folded sheet of
+                  paper), then reads your size in 11 national standards with an
                   honest accuracy range around every result. Grew it into a
                   full measurement suite: bracelet size, necklace length, watch
                   strap, earring gauge, a printable sizer, and pages for
-                  jewellers — in multiple languages, ranking on Google with
+                  jewellers, in multiple languages. It ranks on Google with
                   500+ users and 3,000+ tracked events in the last month, all
                   from organic traffic.
                 </p>
@@ -348,7 +348,7 @@ export default function Home() {
             </div>
             <div className={`flex h-full flex-col overflow-hidden ${card}`}>
               <a href="https://fina-ijpk.vercel.app/" target="_blank" rel="noreferrer" className="border-b border-slate-200 dark:border-slate-800">
-                <Image src={fina} alt="FINA — AI-powered personal finance platform" className="aspect-[16/10] w-full object-cover object-left-top" placeholder="blur" />
+                <Image src={fina} alt="FINA, an AI-powered personal finance platform" className="aspect-[16/10] w-full object-cover object-left-top" placeholder="blur" />
               </a>
               <div className="flex flex-1 flex-col p-7">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
@@ -360,7 +360,7 @@ export default function Home() {
                   AI-powered personal finance platform
                 </p>
                 <p className="mt-4 flex-1 leading-relaxed text-slate-600 dark:text-slate-400">
-                  Full-stack finance app that automates expense tracking — AI
+                  Full-stack finance app that automates expense tracking. AI
                   receipt scanning extracts and categorises transactions,
                   real-time analytics show spending patterns, and background
                   jobs handle recurring transactions.
@@ -376,7 +376,7 @@ export default function Home() {
             </div>
             <div className={`flex h-full flex-col overflow-hidden ${card}`}>
               <a href="https://moviear2.vercel.app/" target="_blank" rel="noreferrer" className="border-b border-slate-200 dark:border-slate-800">
-                <Image src={moviear} alt="Moviear — movie discovery platform" className="aspect-[16/10] w-full object-cover object-left-top" placeholder="blur" />
+                <Image src={moviear} alt="Moviear, a movie discovery platform" className="aspect-[16/10] w-full object-cover object-left-top" placeholder="blur" />
               </a>
               <div className="flex flex-1 flex-col p-7">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
@@ -388,7 +388,7 @@ export default function Home() {
                   Movie discovery platform
                 </p>
                 <p className="mt-4 flex-1 leading-relaxed text-slate-600 dark:text-slate-400">
-                  Discovery platform on the TMDB API — 10,000+ titles with
+                  Discovery platform on the TMDB API with 10,000+ titles,
                   real-time data, advanced filtering, autocomplete search, and a
                   fully responsive layout across mobile, tablet, and desktop.
                 </p>
@@ -477,7 +477,7 @@ export default function Home() {
           </h3>
           <p className="mt-4 max-w-xl leading-relaxed text-slate-600 dark:text-slate-400">
             I&apos;m open to software engineering roles and interesting
-            conversations. Email or call — I reply within a day.
+            conversations. Email or call, I reply within a day.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
