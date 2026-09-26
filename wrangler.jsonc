@@ -1,0 +1,12 @@
+{
+  "name": "harishik-portfolio",
+  "compatibility_date": "2026-09-25",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "harishik.com", "custom_domain": true },
+    { "pattern": "www.harishik.com", "custom_domain": true }
+  ]
+}
