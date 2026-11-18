@@ -2,9 +2,9 @@ import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
 import MobileNav from "./mobile-nav";
 import TypeLine from "./type-line";
-import overview from "@/public/dunnflow-overview.jpg";
-import analytics from "@/public/dunnflow-analytics.jpg";
-import timeline from "@/public/dunnflow-timeline.jpg";
+import overview from "@/public/dunnflow-chat.jpg";
+import analytics from "@/public/dunnflow-dashboard.jpg";
+import timeline from "@/public/dunnflow-booked.jpg";
 import ringsize from "@/public/onlineringsize.jpg";
 import fina from "@/public/fina.jpg";
 import moviear from "@/public/moviear.jpg";
@@ -140,7 +140,7 @@ export default function Home() {
             <a href="https://dunnflow.com" target="_blank" rel="noreferrer" className="font-medium text-slate-900 underline decoration-emerald-600 underline-offset-4 dark:text-white dark:decoration-emerald-400">
               dunnflow
             </a>
-            , a live payment-recovery SaaS for Stripe businesses. I designed,
+            , a live WhatsApp assistant platform for small businesses. I designed,
             built, and launched it end-to-end.
           </p>
           <p className="mt-6 flex items-center gap-2 font-mono text-sm text-slate-500 dark:text-slate-400">
@@ -230,63 +230,64 @@ export default function Home() {
               </p>
             </div>
             <p className="mt-2 text-lg font-medium text-slate-600 dark:text-slate-400">
-              Payment recovery for SaaS businesses on Stripe. Built, launched,
-              and operated solo.
+              WhatsApp assistants for clinics, salons and coaching institutes.
+              Built, launched, and operated solo.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <a href="https://dunnflow.com" target="_blank" rel="noreferrer" className={`sm:col-span-2 overflow-hidden ${card}`}>
                 <Image
                   src={overview}
-                  alt="dunnflow dashboard showing money at risk, recovered, and recovery rate"
+                  alt="A Dunnflow assistant answering a patient on WhatsApp in two seconds"
                   className="w-full"
                   placeholder="blur"
                 />
               </a>
               <div className={`overflow-hidden ${card}`}>
-                <Image src={analytics} alt="dunnflow analytics with recovery charts" placeholder="blur" />
+                <Image src={analytics} alt="The Dunnflow owner dashboard with enquiries, bookings and payments" placeholder="blur" />
               </div>
               <div className={`overflow-hidden ${card}`}>
-                <Image src={timeline} alt="dunnflow payment timeline, the event log of a recovery" placeholder="blur" />
+                <Image src={timeline} alt="A booking confirmed by the assistant while the owner is away" placeholder="blur" />
               </div>
             </div>
 
             <div className="mt-8 space-y-4 leading-relaxed text-slate-600 dark:text-slate-400">
               <p>
                 <span className="font-semibold text-slate-900 dark:text-white">The problem:</span>{" "}
-                subscription businesses silently lose ~9% of revenue to failed
-                card payments. dunnflow catches every failed Stripe invoice the
-                moment it happens, emails the customer a branded one-click pay
-                link, and follows up automatically until the money comes back.
+                small businesses in India run on WhatsApp, but the owner is busy
+                with patients or students all day. Enquiries that arrive at night
+                or during a session wait for hours, and many of those customers
+                book somewhere else.
               </p>
               <p>
                 <span className="font-semibold text-slate-900 dark:text-white">What I built:</span>{" "}
-                the entire product. Signature-verified Stripe webhook
-                processing, a multi-tenant Supabase/PostgreSQL backend with
-                row-level security, automated recovery-email sequences with
-                open/click tracking, per-account analytics dashboards, a live
-                read-only demo, and 90+ SEO-indexed marketing pages.
+                the entire product, on Meta&apos;s official WhatsApp Cloud API. An
+                assistant on the business&apos;s own number that answers questions,
+                books slots against live availability, sends reminders, takes
+                UPI payments in the chat, and hands any conversation to staff
+                instantly. It works in six Indian languages, transcribes voice
+                notes, and gives the owner a dashboard and a daily report.
               </p>
               <p>
                 <span className="font-semibold text-slate-900 dark:text-white">The hard part:</span>{" "}
-                billing customers fairly and safely. dunnflow charges 20% of
-                recovered revenue, so the billing engine uses Stripe idempotency
-                keys plus unique invoice constraints to make double-charging
-                impossible, and automatically excludes refunded or disputed
-                recoveries from fees. Onboarding is one click via Stripe Connect
-                OAuth, so a customer is fully set up in about 3 minutes with no
-                code or API keys.
+                understanding messy real messages reliably and cheaply. A
+                typo-tolerant keyword layer answers most questions instantly;
+                the rest go through a fallback chain of three LLM providers with
+                their own quotas and cool-downs, and personal data is stripped
+                before anything reaches an AI. A generator turns any business
+                website into a ready, personalised assistant with a try-it link,
+                and 300+ have been built for real businesses. The platform is
+                backed by 600+ automated tests.
               </p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
+              <Chip>Node.js</Chip>
+              <Chip>WhatsApp Cloud API</Chip>
+              <Chip>LLM APIs</Chip>
+              <Chip>SQLite</Chip>
               <Chip>Next.js</Chip>
-              <Chip>TypeScript</Chip>
-              <Chip>Stripe Connect</Chip>
-              <Chip>Supabase</Chip>
-              <Chip>PostgreSQL</Chip>
-              <Chip>Resend</Chip>
-              <Chip>Vercel</Chip>
+              <Chip>Cloudflare</Chip>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -299,7 +300,7 @@ export default function Home() {
                 Visit dunnflow.com <ExternalIcon />
               </a>
               <a
-                href="https://dunnflow.com/demo"
+                href="https://dunnflow.com/try"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-600 hover:text-emerald-700 dark:border-slate-700 dark:text-slate-300 dark:hover:border-emerald-400 dark:hover:text-emerald-300"
@@ -347,12 +348,12 @@ export default function Home() {
               </div>
             </div>
             <div className={`flex h-full flex-col overflow-hidden ${card}`}>
-              <a href="https://fina-ijpk.vercel.app/" target="_blank" rel="noreferrer" className="border-b border-slate-200 dark:border-slate-800">
+              <a href="https://drive.google.com/file/d/1yQY5KHMGneFcWdZvCQVlXy6HDpalvug5/view" target="_blank" rel="noreferrer" className="border-b border-slate-200 dark:border-slate-800">
                 <Image src={fina} alt="FINA, an AI-powered personal finance platform" className="aspect-[16/10] w-full object-cover object-left-top" placeholder="blur" />
               </a>
               <div className="flex flex-1 flex-col p-7">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                  <a href="https://fina-ijpk.vercel.app/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-emerald-600 dark:hover:text-emerald-400">
+                  <a href="https://drive.google.com/file/d/1yQY5KHMGneFcWdZvCQVlXy6HDpalvug5/view" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-emerald-600 dark:hover:text-emerald-400">
                     FINA <ExternalIcon />
                   </a>
                 </h3>
@@ -428,7 +429,7 @@ export default function Home() {
                 infra &amp; tools
               </h3>
               <p className="mt-3 leading-relaxed text-slate-600 dark:text-slate-400">
-                AWS (EC2, RDS, SES), Stripe (Connect, webhooks, billing),
+                AWS (EC2, RDS, SES), WhatsApp Cloud API, LLM APIs, Stripe,
                 Vercel, Cloudflare, Git
               </p>
             </div>
@@ -455,9 +456,9 @@ export default function Home() {
               </p>
               <p>
                 That&apos;s how dunnflow happened. I wanted to understand every
-                layer of a real business: payments, webhooks, billing, email
-                deliverability, SEO, even the legal pages. So I built one. It
-                is live, it processes real Stripe events, and it taught me
+                layer of a real business: the product, billing, the legal
+                pages, and finding customers. So I built one. It is live, it
+                runs on WhatsApp for real businesses to try, and it taught me
                 more than any course could.
               </p>
               <p>

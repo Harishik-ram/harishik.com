@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://harishik.com"),
   title: "Pentapalli Harishik · Software Engineer",
   description:
-    "Software engineer in Bengaluru. I build and ship complete products: healthcare platforms at Anvera Health, and dunnflow, a live payment-recovery SaaS on Stripe.",
+    "Software engineer in Bengaluru. I build and ship complete products: healthcare platforms at Anvera Health, and Dunnflow, a live WhatsApp assistant platform for small businesses.",
   openGraph: {
     title: "Pentapalli Harishik · Software Engineer",
     description:
