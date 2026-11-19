@@ -2,7 +2,6 @@ import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
 import MobileNav from "./mobile-nav";
 import TypeLine from "./type-line";
-import overview from "@/public/dunnflow-chat.jpg";
 import analytics from "@/public/dunnflow-dashboard.jpg";
 import timeline from "@/public/dunnflow-booked.jpg";
 import ringsize from "@/public/onlineringsize.jpg";
@@ -235,14 +234,17 @@ export default function Home() {
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <a href="https://dunnflow.com" target="_blank" rel="noreferrer" className={`sm:col-span-2 overflow-hidden ${card}`}>
-                <Image
-                  src={overview}
-                  alt="A Dunnflow assistant answering a patient on WhatsApp in two seconds"
-                  className="w-full"
-                  placeholder="blur"
+              <div className={`sm:col-span-2 overflow-hidden ${card}`}>
+                <video
+                  className="block aspect-video w-full"
+                  src="/dunnflow-demo.mp4"
+                  poster="/dunnflow-demo-poster.jpg"
+                  controls
+                  playsInline
+                  preload="none"
+                  aria-label="Dunnflow product demo film: an assistant answering customers on WhatsApp"
                 />
-              </a>
+              </div>
               <div className={`overflow-hidden ${card}`}>
                 <Image src={analytics} alt="The Dunnflow owner dashboard with enquiries, bookings and payments" placeholder="blur" />
               </div>
